@@ -1,0 +1,50 @@
+body{
+    background-image: linear-gradient(to left, rgb(7, 7, 105), black);
+    margin: 0;
+    overflow-y: hidden;
+}
+.login{
+    height: 80vh;
+    width: 70vw;
+    border: 3px solid black;
+    margin: 5rem auto;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 4);
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+.road{
+    background: url("./Img_02.png");
+    height: 140px;
+    width: 500%;
+    background-repeat: repeat-x;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    animation: moving 5s linear infinite;
+
+}
+@keyframes moving{
+    0%{
+        transform: translateX(-2950px);
+    }
+}
+.car{
+    position: absolute;
+    bottom: 8%;
+    left: 24%;
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel {
+    100%{
+        transform: translateY(-1px);
+    }   
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
